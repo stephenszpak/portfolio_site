@@ -51,7 +51,7 @@ header {
 header .container {
   padding-top: 100px;
   padding-bottom: 50px;
-  height: 650px;
+  height: 835px;
 }
 header img {
   display: block;
@@ -81,64 +81,64 @@ header .intro-text .skills {
   }
 }
 .navbar-custom {
-  background: #233140;
-  font-family: 'Titillium Web', sans-serif;
-  font-weight: 700;
-  border: none;
-}
-.navbar-custom a:focus {
-  outline: none;
+  background-color: #233140;
+  border-color: transparent;
 }
 .navbar-custom .navbar-brand {
-  color: white;
+  color: #18BC9C;
+  font-family: 'Titillium Web', sans-serif;
 }
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus,
 .navbar-custom .navbar-brand:active,
 .navbar-custom .navbar-brand.active {
-  color: white;
-}
-.navbar-custom .navbar-nav {
-  letter-spacing: 1px;
-}
-.navbar-custom .navbar-nav li a {
-  color: white;
-}
-.navbar-custom .navbar-nav li a:hover {
   color: #18BC9C;
-  outline: none;
 }
-.navbar-custom .navbar-nav li a:focus,
-.navbar-custom .navbar-nav li a:active {
-  color: white;
-}
-.navbar-custom .navbar-nav li.active a {
-  color: white;
-  background: #18BC9C;
-}
-.navbar-custom .navbar-nav li.active a:hover,
-.navbar-custom .navbar-nav li.active a:focus,
-.navbar-custom .navbar-nav li.active a:active {
-  color: white;
-  background: #18BC9C;
+.navbar-custom .navbar-collapse {
+  border-color: rgba(255, 255, 255, 0.02);
 }
 .navbar-custom .navbar-toggle {
+  background-color: #18BC9C;
+  border-color: #18BC9C;
+  font-family: 'Titillium Web', sans-serif;
+  text-transform: uppercase;
   color: white;
-  font-size: 10px;
-  border-color: white;
+  font-size: 12px;
 }
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
   background-color: #18BC9C;
+}
+.navbar-custom .nav li a {
+  font-family: 'Titillium Web', sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 1px;
   color: white;
-  border-color: #18BC9C;
+}
+.navbar-custom .nav li a:hover,
+.navbar-custom .nav li a:focus {
+  color: #18BC9C;
+  outline: none;
+}
+.navbar-custom .navbar-nav > .active > a {
+  border-radius: 0;
+  color: white;
+  background-color: #18BC9C;
+}
+.navbar-custom .navbar-nav > .active > a:hover,
+.navbar-custom .navbar-nav > .active > a:focus {
+  color: white;
+  background-color: #18BC9C;
 }
 @media (min-width: 768px) {
   .navbar-custom {
+    background-color: #233140;  /*for navbar color in open screen*/
     padding: 25px 0;
     -webkit-transition: padding 0.3s;
     -moz-transition: padding 0.3s;
     transition: padding 0.3s;
+    border: none;
   }
   .navbar-custom .navbar-brand {
     font-size: 2em;
@@ -146,7 +146,13 @@ header .intro-text .skills {
     -moz-transition: all 0.3s;
     transition: all 0.3s;
   }
+  .navbar-custom .navbar-nav > .active > a {
+    border-radius: 3px;
+  }
+}
+@media (min-width: 768px) {
   .navbar-custom.affix {
+    background-color: #222222;
     padding: 10px 0;
   }
   .navbar-custom.affix .navbar-brand {
