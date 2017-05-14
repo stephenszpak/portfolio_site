@@ -511,3 +511,8 @@ fieldset[disabled] .btn-success.active {
   opacity: 0;
   display: none;
 }
+
+.headshotPic{
+  width: 125px;
+  border: solid 1px;
+}
