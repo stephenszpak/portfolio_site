@@ -1,14 +1,10 @@
 (function($) {
     "use strict";
 
-    // jQuery for page scrolling feature - requires jQuery Easing plugin
-    $('.page-scroll a').bind('click', function(event) {
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: ($($anchor.attr('href')).offset().top - 50)
-        }, 1250, 'easeInOutExpo');
-        event.preventDefault();
-    });
+    //for scrolling images
+    const scrollingImages = ["car", "elly-lucy"];
+    const thisImg = scrollingImages[Math.floor(Math.random() * scrollingImages.length)];
+    $(".scrollHeader").css({"background-image": `url(images/scrolling/${thisImg}.jpg)`});
 
     //toggles tooltip
     $(function () {
@@ -16,13 +12,17 @@
     });
 
     $('body').scrollspy({
-        target: '.navbar-fixed-top',
-        offset: 51
-    });
-
-    // Closes the Responsive Menu on Menu Item Click
-    $('.navbar-collapse ul li a').click(function(){ 
-            $('.navbar-toggle:visible').click();
+        target: '#collapsing-nav-option'
     });
 
 })(jQuery);
+
+ $(document).scroll(function(){
+    const y = $(document).scrollTop();
+    const t = $("#secondary-nav").offset().top;
+    if (y > t) {
+      $(".navbar").fadeIn();
+    } else {
+      $(".navbar").fadeOut();
+    }
+  });

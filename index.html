@@ -1,120 +1,112 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-        <title>Stephen Szpak</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <link rel="stylesheet" href="main.css">
-        <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
-    </head>
-    <body data-spy="scroll" id="page-top" class="index">
 
-    <!-- Navigation -->
-    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span><i class="fa fa-bars"></i>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Stephen Szpak</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" id="page-top" data-target="#collapsing-nav-option" class="index">
+
+    <nav class="navbar navbar-fixed-top standard-coloring" hidden>
+        <div id="nav-container" class="container-fluid">
+            <div class="navbar-header">
+                <!-- button that nav links collapse into when viewed on mobile/narrower screens -->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsing-nav-options" aria-expanded="false">
+                    <i class="hamburger fa fa-bars fa-lg" aria-hidden="true"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">SS</a>
+                <a class="navbar-brand" href="#">SRS</a>
             </div>
-
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div id="collapsing-nav-options" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about">ABOUT</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#portfolio">PROJECTS</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#technologies">TECHNOLOGIES</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">CONTACT</a>
-                    </li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#technologies">Technologies</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-        <!-- Header -->
-        <header class="header-image img-responsive">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="intro-text">
-                            <span class="name">STEPHEN SZPAK</span>
-                            <hr class="star-light">
-                            <span class="skills">Full-Stack Software Developer</span>
+
+    <div id="splash-img" class="scrollHeader">
+        <div class="scrollHeader-content">
+            <h1>STEPHEN SZPAK</h1>
+            <h4>Software Developer</h4>
+        </div>
+    </div>
+
+    <div id="secondary-nav" class="secondary-nav">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#technologies">Technologies</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>ABOUT</h2>
+                    <hr class="star-light">
+                    <h6></h6>
+                    <span><img class="headshotPic" src="images/portfolioHeadshot.jpg" alt=""></span>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-lg-6 col-lg-offset-3">
+                    <p>I am a member of Nashville Software School Evening Cohort 4 and going to NSS has been the best decision I have ever made. My fascination with technology and how things work has really taken hold of me during my time there.</p>
+                    <br>
+                    <p>I pride myself in being a quick learner, hard worker, a team player and focused and organized. Music has been a big part of my life and I find the structure and way I need to think when developing software is very similiar to writing music, especially when it comes to working with a team and the collaboration needed. Nashville Software School has taught me how important working to solve problems with a team is, the value of humility and to ask questions.</p>
+                    <br>
+                    <p></p>
+                    <h2></h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid Section -->
+    <section class="success" id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>PROJECTS</h2>
+                    <hr class="star-light">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <p>Off Leash</p>
+                                <h6>A Dogpark Location App!</h6>
+                            </div>
                         </div>
-                    </div>
+                        <img src="images/portfolio/off-leash/off_leash_website.png" class="img-thumbnail" alt="">
+                    </a>
                 </div>
-            </div>
-        </header>
-
-        <!-- About Section -->
-        <section id="about">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h2>ABOUT</h2>
-                        <hr class="star-light">
-                        <h6></h6>
-                        <span><img class="headshotPic" src="images/portfolioHeadshot.jpg" alt=""></span>
-                    </div>
-                </div>
-                <br>
-                <div class="row">
-                    <div class="col-lg-6 col-lg-offset-3">
-                        <p>I am a member of Nashville Software School Evening Cohort 4 and going to NSS has been the best decision I have ever made.  My fascination with technology and how things work has really taken hold of me during my time there.</p>
-                        <br>
-                        <p>I pride myself in being a quick learner, hard worker, a team player and focused and organized.  Music has been a big part of my life and I find the structure and way I need to think when developing software is very similiar to writing music, especially when it comes to working with a team and the collaboration needed.  Nashville Software School has taught me how important working to solve problems with a team is, the value of humility and to ask questions.</p>
-                        <br>
-                        <p></p>
-                        <h2></h2>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Portfolio Grid Section -->
-        <section class="success" id="portfolio">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h2>PROJECTS</h2>
-                        <hr class="star-light">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-4 portfolio-item">
-                        <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <p>Off Leash</p>
-                                    <h6>A Dogpark Location App!</h6>
-                                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <p>Gauntlet</p>
+                                <h6>A Presidental Debate Themed Game</h6>
                             </div>
-                            <img src="images/portfolio/off-leash/off_leash_website.png" class="img-thumbnail" alt="">
-                        </a>
-                    </div>
-                    <div class="col-sm-4 portfolio-item">
-                        <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <p>Gauntlet</p>
-                                    <h6>A Presidental Debate Themed Game</h6>
-                                </div>
-                            </div>
-                            <img src="images/start_fight.png" class="img-thumbnail" alt="">
-                        </a>
-                    </div>
-                    <!-- <div class="col-sm-4 portfolio-item">
+                        </div>
+                        <img src="images/start_fight.png" class="img-thumbnail" alt="">
+                    </a>
+                </div>
+                <!-- <div class="col-sm-4 portfolio-item">
                         <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
                             <div class="caption">
                                 <div class="caption-content">
@@ -127,318 +119,314 @@
                     </div>
                 </div> -->
             </div>
-        </section>
+    </section>
 
-        <!-- Technologies Section -->
-        <section id="technologies">
-            <div class="text-center">
-                <h2>TECHNOLOGIES</h2>
-                <hr class="star-light">
+    <!-- Technologies Section -->
+    <section id="technologies">
+        <div class="text-center">
+            <h2>TECHNOLOGIES</h2>
+            <hr class="star-light">
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col col-xs-4 col-md-3 tech-col" data-toggle="tooltip" data-placement="top" title="AngularJS">
+                    <img class="grid-img" src="images/tech/tech-angular.png" alt="AngularJS">
+                </div>
+                <div class="col col-xs-4 col-md-3 tech-col" data-toggle="tooltip" data-placement="top" title="Bootstrap and UIBootstrap">
+                    <img class="grid-img" src="images/tech/tech-bootstrap.png" alt="Bootstarp">
+                </div>
+                <div class="col col-xs-4 col-md-3 tech-col" data-toggle="tooltip" data-placement="top" title="CSS3">
+                    <img class="grid-img" src="images/tech/tech-css.png" alt="CSS3">
+                </div>
+                <div class="col col-xs-4 col-md-3 tech-col" data-toggle="tooltip" data-placement="top" title="C-Sharp">
+                    <img class="grid-img" src="images/tech/tech-csharp.png" alt="C-Sharp">
+                </div>
+                <div class="col col-xs-4 col-md-3 tech-col" data-toggle="tooltip" data-placement="top" title="Firebase">
+                    <img class="grid-img" src="images/tech/tech-firebase.png" alt="Firebase">
+                </div>
+                <div class="col col-xs-4 col-md-3 tech-col" data-toggle="tooltip" data-placement="top" title="GitHub">
+                    <img class="grid-img" src="images/tech/tech-github.png" alt="GitHub">
+                </div>
+                <div class="col col-xs-4 col-md-3 tech-col" data-toggle="tooltip" data-placement="top" title="Grunt">
+                    <img class="grid-img" src="images/tech/tech-grunt.png" alt="Grunt">
+                </div>
+                <div class="col col-xs-4 col-md-3 tech-col" data-toggle="tooltip" data-placement="top" title="HTML5">
+                    <img class="grid-img" src="images/tech/tech-html.png" alt="HTML5">
+                </div>
+                <div class="col col-xs-4 col-md-3 tech-col" data-toggle="tooltip" data-placement="top" title="Javascript">
+                    <img class="grid-img" src="images/tech/tech-javascript.png" alt="Javascript">
+                </div>
+                <div class="col col-xs-4 col-md-3 tech-col" data-toggle="tooltip" data-placement="top" title="jQuery">
+                    <img class="grid-img" src="images/tech/tech-jquery.png" alt="jQuery">
+                </div>
+                <div class="col col-xs-4 col-md-3 tech-col" data-toggle="tooltip" data-placement="top" title="Materialize">
+                    <img class="grid-img" src="images/tech/tech-materialize.jpg" alt="Materialize">
+                </div>
+                <div class="col col-xs-4 col-md-3 tech-col" data-toggle="tooltip" data-placement="top" title="Visual Studio">
+                    <img class="grid-img" src="images/tech/tech-vstudio.png" alt="Visual Studio">
+                </div>
+                <div class="col col-xs-4 col-md-3 tech-col" data-toggle="tooltip" data-placement="top" title="Sass">
+                    <img class="grid-img" src="images/tech/tech-sass.png" alt="Sass">
+                </div>
+                <div class="col col-xs-4 col-md-3 tech-col" data-toggle="tooltip" data-placement="top" title="Sql">
+                    <img class="grid-img" src="images/tech/tech-sql.png" alt="Sql">
+                </div>
             </div>
-            <div class="container-fluid">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center" id="contact">
+        <div class="footer-above">
+            <div class="container">
                 <div class="row">
-                    <div class="col col-xs-4 col-md-3 tech-col" data-toggle="tooltip" data-placement="top" title="AngularJS">
-                        <img class="grid-img" src="images/tech/tech-angular.png" alt="AngularJS">
+                    <div class="text-center">
+                        <h2>CONTACT</h2>
+                        <hr class="star-light">
                     </div>
-                    <div class="col col-xs-4 col-md-3 tech-col" data-toggle="tooltip" data-placement="top" title="Bootstrap and UIBootstrap">
-                        <img class="grid-img" src="images/tech/tech-bootstrap.png" alt="Bootstarp">
-                    </div>
-                    <div class="col col-xs-4 col-md-3 tech-col" data-toggle="tooltip" data-placement="top" title="CSS3">
-                        <img class="grid-img" src="images/tech/tech-css.png" alt="CSS3">
-                    </div>
-                    <div class="col col-xs-4 col-md-3 tech-col" data-toggle="tooltip" data-placement="top" title="C-Sharp">
-                        <img class="grid-img" src="images/tech/tech-csharp.png" alt="C-Sharp">
-                    </div>
-                    <div class="col col-xs-4 col-md-3 tech-col" data-toggle="tooltip" data-placement="top" title="Firebase">
-                        <img class="grid-img" src="images/tech/tech-firebase.png" alt="Firebase">
-                    </div>
-                    <div class="col col-xs-4 col-md-3 tech-col" data-toggle="tooltip" data-placement="top" title="GitHub">
-                        <img class="grid-img" src="images/tech/tech-github.png" alt="GitHub">
-                    </div>
-                    <div class="col col-xs-4 col-md-3 tech-col" data-toggle="tooltip" data-placement="top" title="Grunt">
-                        <img class="grid-img" src="images/tech/tech-grunt.png" alt="Grunt">
-                    </div>
-                    <div class="col col-xs-4 col-md-3 tech-col" data-toggle="tooltip" data-placement="top" title="HTML5">
-                        <img class="grid-img" src="images/tech/tech-html.png" alt="HTML5">
-                    </div>
-                    <div class="col col-xs-4 col-md-3 tech-col" data-toggle="tooltip" data-placement="top" title="Javascript">
-                        <img class="grid-img" src="images/tech/tech-javascript.png" alt="Javascript">
-                    </div>
-                    <div class="col col-xs-4 col-md-3 tech-col" data-toggle="tooltip" data-placement="top" title="jQuery">
-                        <img class="grid-img" src="images/tech/tech-jquery.png" alt="jQuery">
-                    </div>
-                    <div class="col col-xs-4 col-md-3 tech-col" data-toggle="tooltip" data-placement="top" title="Materialize">
-                        <img class="grid-img" src="images/tech/tech-materialize.jpg" alt="Materialize">
-                    </div>
-                    <div class="col col-xs-4 col-md-3 tech-col" data-toggle="tooltip" data-placement="top" title="Visual Studio">
-                        <img class="grid-img" src="images/tech/tech-vstudio.png" alt="Visual Studio">
-                    </div>
-                    <div class="col col-xs-4 col-md-3 tech-col" data-toggle="tooltip" data-placement="top" title="Sass">
-                        <img class="grid-img" src="images/tech/tech-sass.png" alt="Sass">
-                    </div>
-                    <div class="col col-xs-4 col-md-3 tech-col" data-toggle="tooltip" data-placement="top" title="Sql">
-                        <img class="grid-img" src="images/tech/tech-sql.png" alt="Sql">
+                    <div class="footer-col col-md">
+                        <ul class="list-inline">
+                            <li>
+                                <a href="mailto:srszpak@gmail.com" class="btn-social btn-outline"><i class="fa fa-fw fa-envelope-o"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/stephenszpak" class="btn-social btn-outline"><i class="fa fa-fw fa-github"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/stephen-szpak-2b352538/" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; Stephen Szpak 2017
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-        <!-- Footer -->
-        <footer class="text-center" id="contact">
-            <div class="footer-above">
-                <div class="container">
-                    <div class="row">
-                        <div class="text-center">
-                            <h2>CONTACT</h2>
-                            <hr class="star-light">
-                        </div>
-                        <div class="footer-col col-md">
-                            <ul class="list-inline">
+    <!-- Portfolio Modals -->
+    <!-- OffLeash Modal -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Off Leash</h2>
+                            <hr class="star-primary">
+                            <br>
+                            <div class="carousel-image-size">
+                                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                                    <!-- Indicators -->
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                                    </ol>
+                                    <!-- Wrapper for slides -->
+                                    <div class="carousel-inner" role="listbox">
+                                        <div class="item active">
+                                            <img class="project-image" src="images/portfolio/off-leash/off_leash_website.png" alt="">
+                                            <div class="carousel-caption">
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <img class="project-image" src="images/portfolio/off-leash/favorite.png" alt="...">
+                                            <div class="carousel-caption">
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <img class="project-image" src="images/portfolio/off-leash/search.png" alt="...">
+                                            <div class="carousel-caption">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Controls -->
+                                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <br>
+                            <p>This is my front-end capstone project I made while attending Nashville Software School. We were to make a CRUD based app using AngularJS and Firebase. In the app you're able to create an account, save favorite parks for future visits, add contacts you met at a park and post to social media outlets to let people know what park you're currently at. I used Firebase to save all of the data gathered on the app. Each individual account that is created is saved to Firebase and the contacts and favorites they add are linked to that particular account.</p>
+                            <br>
+                            <p>Technologies used: AngularJS, Materialize, HTML/CSS, Firebase, Google Maps API</p>
+                            <ul class="list-inline item-details">
                                 <li>
-                                    <a href="mailto:srszpak@gmail.com"  class="btn-social btn-outline"><i class="fa fa-fw fa-envelope-o"></i></a>
+                                    <strong><a href="https://dog-park-2991f.firebaseapp.com/">Link to Deployed App</a></strong>
                                 </li>
                                 <li>
-                                    <a href="https://github.com/stephenszpak" class="btn-social btn-outline"><i class="fa fa-fw fa-github"></i></a>
-                                </li>
-                                <li>
-                                    <a href="https://www.linkedin.com/in/stephen-szpak-2b352538/" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                                    <strong><a href="https://github.com/stephenszpak/capstone-dogpark">Link to Code</a></strong>
                                 </li>
                             </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-below">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            Copyright &copy; Stephen Szpak 2017
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-
-        <!-- Portfolio Modals -->
-        <!-- OffLeash Modal -->
-        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <h2>Off Leash</h2>
-                                <hr class="star-primary">
-                                <br>
-                                <div class="carousel-image-size">
-                                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                                        <!-- Indicators -->
-                                        <ol class="carousel-indicators">
-                                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                                        </ol>
-                                        <!-- Wrapper for slides -->
-                                        <div class="carousel-inner" role="listbox">
-                                            <div class="item active">
-                                                <img class="project-image" src="images/portfolio/off-leash/off_leash_website.png" alt="">
-                                                <div class="carousel-caption">
-                                                </div>
-                                            </div>
-                                            <div class="item">
-                                                <img class="project-image" src="images/portfolio/off-leash/favorite.png" alt="...">
-                                                <div class="carousel-caption">
-                                                </div>
-                                            </div>
-                                            <div class="item">
-                                                <img class="project-image" src="images/portfolio/off-leash/search.png" alt="...">
-                                                <div class="carousel-caption">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Controls -->
-                                        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                                        <span class="sr-only">Previous</span>
-                                        </a>
-                                        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                                        <span class="sr-only">Next</span>
-                                        </a>
-                                    </div>
-                                </div>
-                                <br>
-                                <p>This is my front-end capstone project I made while attending Nashville Software School. We were to make a CRUD based app using AngularJS and Firebase.  In the app you're able to create an account, save favorite parks for future visits, add contacts you met at a park and post to social media outlets to let people know what park you're currently at.  I used Firebase to save all of the data gathered on the app.  Each individual account that is created is saved to Firebase and the contacts and favorites they add are linked to that particular account.</p>
-                                <br>
-                                <p>Technologies used:  AngularJS, Materialize, HTML/CSS, Firebase, Google Maps API</p>
-                                <ul class="list-inline item-details">
-                                    <li>
-                                        <strong><a href="https://dog-park-2991f.firebaseapp.com/">Link to Deployed App</a></strong>
-                                    </li>
-                                    <li>
-                                        <strong><a href="https://github.com/stephenszpak/capstone-dogpark">Link to Code</a></strong>
-                                    </li>
-                                </ul>
-                                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                            </div>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- Project 2 -->
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
+    <!-- Project 2 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
                     </div>
                 </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <h2>The Gauntlet!</h2>
-                                <hr class="star-primary">
-                                <div class="carousel-image-size">
-                                    <div id="carousel-example-generic2" class="carousel slide" data-ride="carousel">
-                                        <!-- Indicators -->
-                                        <ol class="carousel-indicators">
-                                            <li data-target="#carousel-example-generic2" data-slide-to="0" class="active"></li>
-                                            <li data-target="#carousel-example-generic2" data-slide-to="1"></li>
-                                            <li data-target="#carousel-example-generic2" data-slide-to="2"></li>
-                                        </ol>
-                                        <!-- Wrapper for slides -->
-                                        <div class="carousel-inner" role="listbox">
-                                            <div class="item active">
-                                                <img class="project-image" src="images/start_fight.png" alt="">
-                                                <!-- <div class="carousel-caption">
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>The Gauntlet!</h2>
+                            <hr class="star-primary">
+                            <div class="carousel-image-size">
+                                <div id="carousel-example-generic2" class="carousel slide" data-ride="carousel">
+                                    <!-- Indicators -->
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#carousel-example-generic2" data-slide-to="0" class="active"></li>
+                                        <li data-target="#carousel-example-generic2" data-slide-to="1"></li>
+                                        <li data-target="#carousel-example-generic2" data-slide-to="2"></li>
+                                    </ol>
+                                    <!-- Wrapper for slides -->
+                                    <div class="carousel-inner" role="listbox">
+                                        <div class="item active">
+                                            <img class="project-image" src="images/start_fight.png" alt="">
+                                            <!-- <div class="carousel-caption">
                                                     Here you enter an alias for yourself.
                                                 </div> -->
-                                            </div>
-                                            <div class="item">
-                                                <img class="project-image" src="images/fightscreen.png" alt="...">
-                                                <div class="carousel-caption">
-                                                    Clicking 'Debate' starts the debate.  The debate ends when one of the players votes gets to 0.
-                                                </div>
+                                        </div>
+                                        <div class="item">
+                                            <img class="project-image" src="images/fightscreen.png" alt="...">
+                                            <div class="carousel-caption">
+                                                Clicking 'Debate' starts the debate. The debate ends when one of the players votes gets to 0.
                                             </div>
                                         </div>
-                                        <!-- Controls -->
-                                        <a class="left carousel-control" href="#carousel-example-generic2" role="button" data-slide="prev">
+                                    </div>
+                                    <!-- Controls -->
+                                    <a class="left carousel-control" href="#carousel-example-generic2" role="button" data-slide="prev">
                                         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                                         <span class="sr-only">Previous</span>
-                                        </a>
-                                        <a class="right carousel-control" href="#carousel-example-generic2" role="button" data-slide="next">
+                                    </a>
+                                    <a class="right carousel-control" href="#carousel-example-generic2" role="button" data-slide="next">
                                         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                                         <span class="sr-only">Next</span>
-                                        </a>
-                                    </div>
+                                    </a>
                                 </div>
-                                <br>
-                                <p>Group Project done in the Front-End at Nashville Software School.</p>
-
-                                <p>Combat text-adventure game using prototypal inheritance: composed player
-                                object, semi-random gameplay. Collaboration via GitHub and Trello. Participated in
-                                app design; wrote battleground.js, and helped where it was needed, mostly on the functionality.</p>
-
-                                <p>Technologies used: Javascript/Jquery</p>
-                                <ul class="list-inline item-details">
-                                    <li>Github:
-                                        <strong><a href="https://github.com/nss-evening-cohort-04/gauntlet-the-codefederates">Link to Code</a>
-                                        </strong>
-                                    </li>
-                                </ul>
-                                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                             </div>
+                            <br>
+                            <p>Group Project done in the Front-End at Nashville Software School.</p>
+                            <p>Combat text-adventure game using prototypal inheritance: composed player object, semi-random gameplay. Collaboration via GitHub and Trello. Participated in app design; wrote battleground.js, and helped where it was needed, mostly on the functionality.</p>
+                            <p>Technolgies used: Javascript/Jquery</p>
+                            <ul class="list-inline item-details">
+                                <li>Github:
+                                    <strong><a href="https://github.com/nss-evening-cohort-04/gauntlet-the-codefederates">Link to Code</a>
+                                        </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- Project 3 -->
-        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
+    <!-- Project 3 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
                     </div>
                 </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <h2>Project Title</h2>
-                                <hr class="star-primary">
-                                <div class="carousel-image-size">
-                                    <div id="carousel-example-generic3" class="carousel slide" data-ride="carousel">
-                                        <!-- Indicators -->
-                                        <ol class="carousel-indicators">
-                                            <li data-target="#carousel-example-generic3" data-slide-to="0" class="active"></li>
-                                            <li data-target="#carousel-example-generic3" data-slide-to="1"></li>
-                                            <li data-target="#carousel-example-generic3" data-slide-to="2"></li>
-                                        </ol>
-                                        <!-- Wrapper for slides -->
-                                        <div class="carousel-inner" role="listbox">
-                                            <div class="item active">
-                                                <img class="project-image" src="images/portfolio/off-leash/off_leash_website.png" alt="">
-                                                <div class="carousel-caption">
-                                                </div>
-                                            </div>
-                                            <div class="item">
-                                                <img class="project-image" src="images/portfolio/off-leash/favorite.png" alt="...">
-                                                <div class="carousel-caption">
-                                                </div>
-                                            </div>
-                                            <div class="item">
-                                                <img class="project-image" src="images/portfolio/off-leash/search.png" alt="...">
-                                                <div class="carousel-caption">
-                                                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Title</h2>
+                            <hr class="star-primary">
+                            <div class="carousel-image-size">
+                                <div id="carousel-example-generic3" class="carousel slide" data-ride="carousel">
+                                    <!-- Indicators -->
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#carousel-example-generic3" data-slide-to="0" class="active"></li>
+                                        <li data-target="#carousel-example-generic3" data-slide-to="1"></li>
+                                        <li data-target="#carousel-example-generic3" data-slide-to="2"></li>
+                                    </ol>
+                                    <!-- Wrapper for slides -->
+                                    <div class="carousel-inner" role="listbox">
+                                        <div class="item active">
+                                            <img class="project-image" src="images/portfolio/off-leash/off_leash_website.png" alt="">
+                                            <div class="carousel-caption">
                                             </div>
                                         </div>
-                                        <!-- Controls -->
-                                        <a class="left carousel-control" href="#carousel-example-generic3" role="button" data-slide="prev">
+                                        <div class="item">
+                                            <img class="project-image" src="images/portfolio/off-leash/favorite.png" alt="...">
+                                            <div class="carousel-caption">
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <img class="project-image" src="images/portfolio/off-leash/search.png" alt="...">
+                                            <div class="carousel-caption">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Controls -->
+                                    <a class="left carousel-control" href="#carousel-example-generic3" role="button" data-slide="prev">
                                         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                                         <span class="sr-only">Previous</span>
-                                        </a>
-                                        <a class="right carousel-control" href="#carousel-example-generic3" role="button" data-slide="next">
+                                    </a>
+                                    <a class="right carousel-control" href="#carousel-example-generic3" role="button" data-slide="next">
                                         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                                         <span class="sr-only">Next</span>
-                                        </a>
-                                    </div>
+                                    </a>
                                 </div>
-                                <p>prject 3 model this is project 3 modal</p>
-                                <ul class="list-inline item-details">
-                                    <li>Github:
-                                        <strong><a href="#">Link To Code</a>
-                                        </strong>
-                                    </li>
-                                </ul>
-                                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                             </div>
+                            <p>prject 3 model this is project 3 modal</p>
+                            <ul class="list-inline item-details">
+                                <li>Github:
+                                    <strong><a href="#">Link To Code</a>
+                                        </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <script src="https://use.fontawesome.com/143af0fa6f.js"></script>
+    <script src="https://use.fontawesome.com/143af0fa6f.js"></script>
 
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
 
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-        
-        <script type="text/javascript" src="main.js"></script>
-    </body>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
 </html>
