@@ -17,12 +17,13 @@
 
 })(jQuery);
 
- $(document).scroll(function(){
+$(document).scroll(function(){
     const y = $(document).scrollTop();
     const t = $("#secondary-nav").offset().top;
+
     if (y > t) {
-      $(".navbar").fadeIn();
+        $(".navbar").fadeIn();
     } else {
-      $(".navbar").fadeOut();
+        $(".navbar").fadeOut();
     }
-  });
+});

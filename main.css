@@ -435,6 +435,9 @@ fieldset[disabled] .btn-success.active {
     height: 70px;
     margin: 10px 0;
 }
+.italic {
+  font-style: italic;
+}
 .tech-col {
     padding-bottom: 30px;
     text-align: center;
