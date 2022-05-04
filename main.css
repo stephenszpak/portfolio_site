@@ -5,6 +5,7 @@
     height: 90vh;
     padding: 0;
 }
+
 .scrollHeader-content {
     background: rgba(51, 51, 51, 0.42);
     height: 100%;
@@ -169,6 +170,24 @@ section.success {
     section.first {
         padding-top: 75px;
     }
+}
+.outer {
+    display: grid;
+    grid-template: 1fr / 1fr;
+    place-items: center;
+}
+
+.outer>* {
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+}
+
+.outer .below {
+    z-index: 2;
+}
+
+.outer .top {
+    z-index: 1;
 }
 #portfolio .portfolio-item {
     margin: 0 0 15px;
@@ -408,10 +427,10 @@ fieldset[disabled] .btn-success.active {
     transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     /* IE 9 */
-    
+
     -webkit-transform: rotate(45deg);
     /* Safari and Chrome */
-    
+
     z-index: 1051;
 }
 .portfolio-modal .close-modal .lr .rl {
@@ -421,10 +440,10 @@ fieldset[disabled] .btn-success.active {
     transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     /* IE 9 */
-    
+
     -webkit-transform: rotate(90deg);
     /* Safari and Chrome */
-    
+
     z-index: 1052;
 }
 .portfolio-modal .modal-backdrop {
@@ -449,10 +468,10 @@ fieldset[disabled] .btn-success.active {
     transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     /* IE 9 */
-    
+
     -webkit-transform: rotate(90deg);
     /* Safari and Chrome */
-    
+
     z-index: 1052;
 }
 .portfolio-modal .modal-backdrop {
